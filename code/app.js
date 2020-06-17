@@ -160,7 +160,7 @@
 //task 6
 //document.write("random number between 1 and 100: "+Math.ceil(Math.random() * 100));
 
-//task 7    *****************samjh ni aya question
+//task 7    *****************samjh ni aya question***************
 
 //task 8
 // var secret= Math.ceil(Math.random() * 10) ;
@@ -221,11 +221,11 @@
 //     alert("Its PM");
 // }
 
-//task 8
+// task 8
 // var laterDate= new Date("dec 31 2020 00:00:00");
 // document.write(laterDate);
 
-//task 9 ************** ans sahi ni ara**************
+//task 9
 // var ramadan= new Date("June 18 2015");
 // var today= new Date();
 // var ramadanTime= ramadan.getTime();
@@ -255,5 +255,190 @@
 // var acc= Math.floor(diff/(1000*60*60*24*30*12));
 // document.write("Your age is "+acc+"<br>");
 // document.write("Your birth year is "+dob.getFullYear());
+
+
+// chapter 35-38
+
+//task 1
+// function showDate(){
+//     return new Date();
+// }
+// var today= showDate();
+// document.write(today);
+
+//task 2
+// function showName(firstName, lastName){
+//     document.write(firstName+" "+lastName);
+// }
+// showName("Rija", "Nadeem");
+
+//task 3
+// function addition(num1, num2){
+//     var sum= num1+num2;
+//     return sum;
+// }
+// var arg1= +prompt("Enter 1st num");
+// var arg2= +prompt("Enter 2nd num");
+// var add= addition(arg1,arg2);
+// alert(add);
+
+//task 4
+// function calc(num1,num2,oper) {
+//     if(oper==="+"){
+//         return num1+num2;
+//     }
+//     else if(oper==="-"){
+//         return num1-num2;
+//     }
+//     else if(oper==="*"){
+//         return num1*num2;
+//     }
+//     else if(oper==="/"){
+//         return num1/num2;
+//     }
+//     else if(oper==="%"){
+//         return num1%num2;
+//     }
+// }
+// var arg1= +prompt("Enter 1st num");
+// var arg2= +prompt("Enter 2nd num");
+// var operator= prompt("Enter operator");
+// var result= calc(arg1,arg2,operator);
+// alert("Result of "+arg1+" "+operator+" "+arg2+" : "+result);
+
+//task 5
+// function getSquare(num){
+//     return num*num;
+// }
+// var input = +prompt("Enter a number and get its square");
+// alert(getSquare(input));
+
+//task 6
+// function factorial(num) {
+//     var sum=1;
+//     for(var i=num; i>=1; i--){
+//         sum=sum*i;
+//     }
+//     return sum;
+// }
+// var input = +prompt("Enter a number and get its factorial");
+// alert(factorial(input));
+
+//task 7
+// function counting(start,end) {
+//     for(var i=start; i<=end; i++){
+//         document.write(i+ " ");
+//     }
+// }
+// var arg1= +prompt("Enter staring num");
+// var arg2= +prompt("Enter ending num");
+// counting(arg1, arg2);
+
+//task 8
+// function calcSquare(num) {
+//     return num*num;
+// }
+// function calcHypotenuse(base,perp) {
+//     var baseSquare= calcSquare(base);
+//     var perpSquare= calcSquare(perp);
+//     var hypo= Math.sqrt(baseSquare+perpSquare);
+//     return hypo;
+// }
+// var arg1= +prompt("Enter base");
+// var arg2= +prompt("Enter perpendicular");
+// var result=calcHypotenuse(arg1, arg2);
+// alert(result);
+
+//task 9(i)
+// function RecArea(width, height){
+//     var area= width*height;
+//     return area;
+// }
+// var result= RecArea(2,5);
+// alert("Area of Rectangle is "+result);
+
+//task 9(ii)
+// function RecArea(width, height){
+//     var area= width*height;
+//     return area;
+// }
+// var arg1= +prompt("Enter width");
+// var arg2= +prompt("Enter height");
+// var result= RecArea(arg1,arg2);
+// alert("Area of Rectangle is "+result);
+
+//task 10
+// function reverseString(str) {
+//     var arr=str.split("");
+//     var revArr=arr.reverse();
+//     var revStr=revArr.join("");
+//     if(revStr===str){
+//         alert("String is palindrome");
+//     }
+//     else{
+//         alert("String is NOT palindrome");
+//     }
+// }
+// reverseString("hello");
+// reverseString("madam");
+
+//task 11
+// function captialize(str) {
+//     var arr=str.split(" ");
+//     for(var i=0; i<arr.length;i++){
+//         var first_letter  =arr[i].slice(0,1).toUpperCase();
+//         arr[i] = first_letter+arr[i].slice(1);
+//     }
+//     var result= arr.join(" ");
+//     alert(result);
+// }
+// captialize("hello world");
+// captialize("Bbq");
+// captialize("the black dog");
+// captialize("believe in yourself, you can do it");
+
+//task 12 *************** not working correctyly**************
+// function longestWord(str) {
+//     var arr=str.split(" ");
+//     var ans=arr[0];
+//     for(var i=0; i<arr.length; i++){
+
+//        if((arr[i].length) < (arr[i+1].length)){
+//            ans=arr[i+1];
+//        }
+     
+//     }
+//     document.write(ans);
+// }
+// longestWord("my name is hamza");
+
+//task 13
+// function counter(str,letter){
+//     var counter=0;
+//     var str2=str.toLowerCase();
+//     for(var i=0; i<str2.length; i++){
+//         if(str2.slice(i,i+1)===letter){
+//             counter++
+//         }
+//     }
+//     return counter;
+// }
+// var arg1= prompt("Enter string");
+// var arg2 =prompt("Enter letter to be searched");
+// var result= counter(arg1,arg2);
+// alert("the word "+arg2+" appears "+result+ " time(s) in the string: "+arg1);
+
+//task 14
+// function calcCircumference(radius) {
+//     var circum= 2*3.14*radius;
+//     alert("Circumference is: "+circum);
+// }
+// function calcArea(radius) {
+//     var area= 3.14*radius*radius;
+//     alert("Area is: "+area);
+// }
+// var r= +prompt("Enter radius of circle");
+// calcCircumference(r);
+// calcArea(r);
 
 
