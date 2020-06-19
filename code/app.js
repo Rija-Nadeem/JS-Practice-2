@@ -129,18 +129,28 @@
 // chapter 26-30
 
 //task 1
-// var num= 3.45214;
+// var num=+prompt("Enter a number");
+// if(Math.sign(num)===1){
 // document.write("number: "+num+"<br>");
 // document.write("number: "+Math.round(num)+"<br>");
 // document.write("number: "+Math.floor(num)+"<br>");
 // document.write("number: "+Math.ceil(num)+"<br>");
+// }
+// else{
+//     alert("Enter Positive Number")
+// }
 
 //task 2
-// var num= -2.673;
+// var num=+prompt("Enter a number");
+// if(Math.sign(num)===-1){
 // document.write("number: "+num+"<br>");
 // document.write("number: "+Math.round(num)+"<br>");
 // document.write("number: "+Math.floor(num)+"<br>");
 // document.write("number: "+Math.ceil(num)+"<br>");
+// }
+// else{
+//     alert("Enter a Negative Number")
+// }
 
 //task 3
 // var num= +prompt("Enter a number");
@@ -243,8 +253,21 @@
 // var acc= Math.floor(diff/(1000*60));
 //document.write("On reference date "+refDate+" ,"+acc+" seconds had passed since beginning of 2015")
 
-// task 11 12 ********** not done *******************
+//task 11
+// var currDate=new Date();
+// var date=new Date();
+// var hr=date.getHours();
+// var date1=new Date(date.setHours(hr+1))
+// document.write("<h1>Current date "+currDate)
+// document.write("<h1>After 1 hour, it will be "+date1)
 
+//task 12
+// var currDate=new Date();
+// var date=new Date();
+// var year=date.getFullYear();
+// var date1=new Date(date.setFullYear(year-100))
+// document.write("<h1>Current date "+currDate)
+// document.write("<h1>Hundred years back, it was "+date1)
 
 //task 13
 // var dob= new Date(prompt("Enter your birth day"));
@@ -397,18 +420,19 @@
 // captialize("the black dog");
 // captialize("believe in yourself, you can do it");
 
-//task 12 *************** not working correctyly**************
+//task 12 
 // function longestWord(str) {
 //     var arr=str.split(" ");
 //     var ans=arr[0];
-//     for(var i=0; i<arr.length; i++){
+//     for(var i=1; i<arr.length; i++){
 
-//        if((arr[i].length) < (arr[i+1].length)){
-//            ans=arr[i+1];
+//        if((arr[i].length) > (arr[i-1].length)){
+//            ans=arr[i];
 //        }
      
 //     }
-//     document.write(ans);
+//     document.write("<h1>EXAMPLE STRING : "+str+"<br>")
+//     document.write("<h1>EXPECTED STRING : "+ans+"<br>")
 // }
 // longestWord("my name is hamza");
 
