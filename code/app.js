@@ -100,7 +100,24 @@
 //     document.write(input+" doesnot found");
 // }
 
-//task 15 ************************ not done *************************
+//task 15 
+// var password=prompt("Enter password");
+// document.write("<h1>Entered Password: "+password+"<br>")
+// var lowerCaseLetters = /[a-z]/g;
+// var upperCaseLetters = /[A-Z]/g;
+// var numbers = /[0-9]/g;
+
+// if(password.length<6){
+//     alert("Password length should not be less than 6, Please enter a valid password")
+// }
+// if(password.match(numbers)&&(password.match(upperCaseLetters)||password.match(lowerCaseLetters))){
+//     if(password[0]>=0||password[0]<=9){
+//         alert("Password should not begin with number")
+//     }
+// }
+// else{
+//     alert("Password must contain letters and number")
+// }
 
 //task 16
 // var university = "University of Karachi";
@@ -170,7 +187,11 @@
 //task 6
 //document.write("random number between 1 and 100: "+Math.ceil(Math.random() * 100));
 
-//task 7    *****************samjh ni aya question***************
+//task 7   
+// var regex = /[+-]?\d+(\.\d+)?/g;
+// var str2 = prompt("Enter your weight in kg");
+// var floats2 = str2.match(regex).map(function(v) { return parseFloat(v); });
+// document.write("The weigh of user is "+floats2+" kilograms");
 
 //task 8
 // var secret= Math.ceil(Math.random() * 10) ;
@@ -223,7 +244,7 @@
 // document.write("Elapsed milliseconds since Jan 1, 1970: "+msec+"<br>");
 // document.write("Elapsed minutes since Jan 1, 1970: "+(msec/1000*60)+"<br>");
 
-//task 7 ******************check in morning*****************
+//task 7 
 // var today= new Date();
 // if(today.getHours()<=12){
 //     alert("Its AM");
@@ -270,15 +291,15 @@
 // document.write("<h1>Hundred years back, it was "+date1)
 
 //task 13
-// var dob= new Date(prompt("Enter your birth day"));
-// var dobTime= dob.getTime();
-// var today= new Date();
-// var todayTime= today.getTime();
-// var diff= todayTime-dobTime;
-// var acc= Math.floor(diff/(1000*60*60*24*30*12));
-// document.write("Your age is "+acc+"<br>");
-// document.write("Your birth year is "+dob.getFullYear());
-
+// function dob(age){
+//     var date=new Date();
+//     var year=date.getFullYear();
+//     var dob=year-age;
+//     document.write("<h1>Your age is "+age)
+//     document.write("<h1>Your birth year is "+dob)
+// }
+// var a=prompt("Enter your age")
+// dob(a)
 
 // chapter 35-38
 
